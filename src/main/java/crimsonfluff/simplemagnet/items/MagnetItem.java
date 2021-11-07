@@ -124,7 +124,7 @@ public class MagnetItem extends Item {
                                 itemIE.getZ(), 2, 0D, 0D, 0D, 0D);
 
                             //r = itemIE.getItem().getCount();
-                            itemIE.setPickupDelay(0);
+                            itemIE.onPlayerCollision(playerIn);
                             //if (r != 0) {
                             if (itemIE.distanceTo(playerIn) > 1.5f) shouldBreak = true;
                             itemIE.setPos(x, y, z);
